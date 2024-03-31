@@ -39,7 +39,6 @@ form.addEventListener('submit', async event => {
   } catch (error) {
     console.log(error);
   }
-  checkBtnStatus();
 });
 btnLoadMore.addEventListener('click', async event => {
   event.preventDefault();
@@ -68,8 +67,6 @@ function checkBtnStatus() {
       backgroundColor: '#ef4040',
       position: 'topRight',
     });
-  } else {
-    btnLoadMore.classList.remove('is-hidden');
   }
   loader.classList.add('is-hidden');
 }
